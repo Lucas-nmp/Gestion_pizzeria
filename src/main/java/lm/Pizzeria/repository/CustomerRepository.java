@@ -13,7 +13,7 @@ import org.springframework.data.repository.query.Param;
 public interface CustomerRepository extends JpaRepository<Customer, Long>{
     
 
-    @Query("SELECT c FROM customer c WHERE c.phone = :phone")
+    @Query("SELECT c FROM Customer c WHERE c.phone = :phone")
     Customer findCustomerByPhone (@Param("phone") String phone);
     
 }
