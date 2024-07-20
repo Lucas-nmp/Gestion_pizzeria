@@ -3,11 +3,13 @@ package lm.Pizzeria.service;
 import lm.Pizzeria.model.Customer;
 import lm.Pizzeria.repository.CustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 /**
  *
  * @author Lucas
  */
+@Service
 public class CustomerService {
     
     @Autowired
